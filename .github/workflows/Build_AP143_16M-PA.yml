@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_AP143_16M
+name: Build_AP143_16M_PA
 
 on: 
   release:
@@ -78,9 +78,9 @@ jobs:
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku   
   
-    - name: Configuration Customization - Build_AP143_16M
+    - name: Configuration Customization - Build_AP143_16M_PA
       env:
-        CONFIG_FILE: 'AP143_16M_pb.config'
+        CONFIG_FILE: 'AP143_16M_PA.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
