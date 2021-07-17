@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_AP143_16M_PD-1
+name: Build_AP143_16M_PD_1
 
 on: 
   release:
@@ -78,7 +78,7 @@ jobs:
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku   
   
-    - name: Configuration Customization - Build_AP143_16M_PD-1
+    - name: Configuration Customization - Build_AP143_16M_PD_1
       env:
         CONFIG_FILE: 'AP143_16M_PD.config'
       run: |
